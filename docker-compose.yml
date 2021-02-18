@@ -29,8 +29,8 @@ services:
     privileged: true
     labels:
       io.balena.features.dbus: '1'
-  pijuice:
-    build: ./pijuice
+  i2c:
+    build: ./i2c
     privileged: true
     labels: 
       io.balena.features.balena-api: '1'
