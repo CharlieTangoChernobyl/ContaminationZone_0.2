@@ -4,8 +4,7 @@ FROM balenalib/raspberry-pi-python
 
 # use apt-get if you need to install dependencies
 RUN apt-get update && apt-get install -yq \
-		python-smbus && \
-        smbus && \
+		python3-smbus && \
 		apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Set our working directory
