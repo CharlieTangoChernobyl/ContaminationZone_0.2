@@ -7,11 +7,4 @@
 # the Adafruit Triple Axis ADXL345 breakout board:
 # http://shop.pimoroni.com/products/adafruit-triple-axis-accelerometer
 
-import smbus, os
-from time import sleep
 
-busNumber = int(os.getenv("I2C_BUS"))
-
-bus = smbus.SMBus(busNumber)
-
-        sleep(5)
